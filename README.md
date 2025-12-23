@@ -3,6 +3,7 @@
 Building an interactive platform for backtesting algoritms in an interactive way, 
 and hopefuly learn something on the way. 
 
+I want to host this server on an raspberry pi, and eventully cluster, and after that AI cluster.
 
 Stage 1: 
 
@@ -22,7 +23,7 @@ Files:
 
     * data
         Daily data from omxs30.
-            Temp: datahandling - if data needs cleaning.
+        "omxs_new.csv" - starts where volume also is accounted for.
 
     
     * venv

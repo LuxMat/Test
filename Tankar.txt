@@ -46,7 +46,7 @@ Simulera hur en egen order skulle flytta priset.
 - Kölogik
 
 
--- Vill kunna analysera då "riktiga människor" kommer in i marknaden, mellan den 25e-30onde. Start/slut av dagen. Lunchtider?.
+-- Vill kunna analysera då "riktiga människor" kommer in i marknaden, mellan den 25e-30onde. Start/slut av dagen. Lunchtider?
 
 
 
