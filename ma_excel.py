@@ -11,17 +11,17 @@ def add_pair_sheets(ma_test_res, writer):
 
 def create_excel(ma_test_res):
     filename = "ma_results.xlsx"
-    writer = pd.ExcelWriter(filename, engine='xlsxwriter')
+    #writer = pd.ExcelWriter(filename, engine='xlsxwriter')
     
     ma_test_res = ma_test_res[['pair', 'num_trades', 'total_gain', 'mashort', 'malong']].copy()
     ma_test_res['CROSS'] = "MA_" + ma_test_res['mashort'].map(str) + "_" + ma_test_res['malong'].map(str) #Helps to group MA to analyze
 
     ma_test_res.sort_values(by=['pair', 'total_gain'], ascending=[True,False], inplace=True)
 
-    
-    add_pair_sheets(ma_test_res, writer)
+    with pd.ExcelWriter(filename, engine='xlsxwriter') as writer:
+        add_pair_sheets(ma_test_res, writer)
 
-    writer.save()
+    #writer.save()
 
 
 if __name__ == '__main__':

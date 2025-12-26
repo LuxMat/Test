@@ -4,6 +4,7 @@ from dateutil.parser import *
 import utils
 import instrument
 import ma_result
+from ma_excel import create_excel
 
 pd.set_option('display.max_columns', None) #show all columns when printing dataframe
 
@@ -89,6 +90,8 @@ def process_results(results):
 
     final_df.to_csv('ma_test_res.csv')
     print(final_df.shape, final_df.num_trades.sum())
+
+    create_excel(final_df)
     
 
 def get_test_pairs(pair_str):
