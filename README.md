@@ -58,3 +58,7 @@ Libraries:
 
 Extra: Robopip på babypips
 Bluefever Software
+
+
+
+Med hjälp av (bayes? monte carlo? splitta omxs30 dag till 5 min data?)
